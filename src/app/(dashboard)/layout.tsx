@@ -11,5 +11,12 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>Dashboard{children}</div>;
+  return (
+    <div className="h-screen flex">
+      {/*LEFT */}
+      <div className="">L</div>
+      {/*RIGHT */}
+      <div className="">R</div>
+    </div>
+  );
 }
