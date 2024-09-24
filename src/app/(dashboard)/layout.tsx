@@ -14,9 +14,9 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
       {/*LEFT */}
-      <div className="">L</div>
+      <div className="w-1/6">L</div>
       {/*RIGHT */}
-      <div className="">R</div>
+      <div className="w-5/6">R</div>
     </div>
   );
 }
