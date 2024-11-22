@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import Menu from "@/components/Menu";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,6 +25,7 @@ export default function DashboardLayout({
           <Image src="/logo.png" alt="logo" width={32} height={32} />
           <span className="hidden lg:block">EduBoard</span>
         </Link>
+        <Menu />
       </div>
       {/*RIGHT */}
       <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">
