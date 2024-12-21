@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customSky: "#C3EBFA",
+        customSkyLight: "#EDF9FD",
+        customPurple: "#CFCEFF",
+        customPurpleLight: "#F1F0FF",
+        customYellow: "#FAE27C",
+        customYellowLight: "#FEFCE8",
       },
     },
   },
