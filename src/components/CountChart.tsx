@@ -16,12 +16,12 @@ const data = [
   },
   {
     name: "Girls",
-    count: 50,
+    count: 45,
     fill: "#8884d8",
   },
   {
     name: "Boys",
-    count: 50,
+    count: 55,
     fill: "#83a6ed",
   },
 ];
@@ -51,8 +51,8 @@ const CountChart = () => {
         <Image
           src="/maleFemale.png"
           alt=""
-          width={50}
-          height={50}
+          width={40}
+          height={40}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </div>
