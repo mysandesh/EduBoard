@@ -54,9 +54,9 @@ const AttendanceChart = () => {
       </div>
       <ResponsiveContainer width="100%" height="90%">
         <BarChart width={500} height={300} data={data} barSize={20}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ddd" />
+          <XAxis dataKey="name" axisLine={false} />
+          <YAxis axisLine={false} />
           <Tooltip />
           <Legend
             align="left"
