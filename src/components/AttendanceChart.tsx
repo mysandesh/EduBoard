@@ -48,7 +48,7 @@ const data = [
 const AttendanceChart = () => {
   return (
     <div className="bg-white rounded-lg p-4 h-full">
-      <div className="">
+      <div className="flex justify-between items-center">
         <h1 className="text-sm font-semibold">Attendance</h1>
         <Image src="/moreDark.png" alt="" width={12} height={12} />
       </div>
@@ -66,7 +66,9 @@ const AttendanceChart = () => {
             tick={{ fill: "#1d1d5db" }}
             tickLine={false}
           />
-          <Tooltip />
+          <Tooltip
+            contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
+          />
           <Legend
             align="left"
             verticalAlign="top"
