@@ -95,7 +95,7 @@ const FinanceChart = () => {
         <h1 className="text-sm font-semibold">Finance</h1>
         <Image src="/moreDark.png" alt="" width={12} height={12} />
       </div>
-      <ResponsiveContainer width="100%" height="90%" className="text-sm">
+      <ResponsiveContainer width="100%" height="90%" className="text-xs">
         <LineChart
           width={500}
           height={300}
@@ -131,9 +131,16 @@ const FinanceChart = () => {
             type="monotone"
             dataKey="income"
             stroke="#8884d8"
-            activeDot={{ r: 8 }}
+            strokeWidth={1}
+            activeDot={{ r: 5 }}
           />
-          <Line type="monotone" dataKey="expense" stroke="#82ca9d" />
+          <Line
+            type="monotone"
+            dataKey="expense"
+            stroke="#82ca9d"
+            strokeWidth={1}
+            activeDot={{ r: 5 }}
+          />
         </LineChart>
       </ResponsiveContainer>
     </div>
