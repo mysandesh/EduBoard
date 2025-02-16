@@ -95,21 +95,34 @@ const FinanceChart = () => {
         <h1 className="text-sm font-semibold">Finance</h1>
         <Image src="/moreDark.png" alt="" width={12} height={12} />
       </div>
-      <ResponsiveContainer width="100%" height="90%">
+      <ResponsiveContainer
+        width="100%"
+        height="90%"
+        className="text-sm text-gray-300"
+      >
         <LineChart
           width={500}
           height={300}
           data={data}
           margin={{
-            top: 5,
-            right: 30,
-            left: 20,
+            top: 20,
+            right: 10,
+            left: 5,
             bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis
+            dataKey="name"
+            axisLine={false}
+            tick={{ fill: "#1d1d5db" }}
+            tickLine={false}
+          />
+          <YAxis
+            axisLine={false}
+            tick={{ fill: "#1d1d5db" }}
+            tickLine={false}
+          />
           <Tooltip />
           <Legend />
           <Line

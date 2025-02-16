@@ -52,7 +52,7 @@ const AttendanceChart = () => {
         <h1 className="text-sm font-semibold">Attendance</h1>
         <Image src="/moreDark.png" alt="" width={12} height={12} />
       </div>
-      <ResponsiveContainer width="100%" height="90%">
+      <ResponsiveContainer width="100%" height="90%" className="text-sm">
         <BarChart width={500} height={300} data={data} barSize={20}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ddd" />
           <XAxis
