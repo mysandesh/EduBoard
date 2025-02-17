@@ -6,7 +6,42 @@ const Announcements = () => {
         <span className="text-xs text-gray-400">View All</span>
       </div>
       <div className="flex flex-col gap-4 mt-4">
-        <div className="bg-customSkyLight rounded-md p-4"></div>
+        <div className="bg-customSkyLight rounded-md p-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xs">Lorem ipsum dolor sit.</h2>
+            <span className="text-xs text-gray-400 bg-white rounded-md px-1 py-1">
+              2025-10-12
+            </span>
+          </div>
+          <p className="text-xs text-gray-400 mt-1">
+            Lorem ipsum dolor sit amet consecturuer adipisicing elit.
+            Volumptums, epxeditia. Rerum, facilis
+          </p>
+        </div>
+        <div className="bg-customPurpleLight rounded-md p-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xs">Lorem ipsum dolor sit.</h2>
+            <span className="text-xs text-gray-400 bg-white rounded-md px-1 py-1">
+              2025-10-12
+            </span>
+          </div>
+          <p className="text-xs text-gray-400 mt-1">
+            Lorem ipsum dolor sit amet consecturuer adipisicing elit.
+            Volumptums, epxeditia. Rerum, facilis
+          </p>
+        </div>
+        <div className="bg-customYellowLight rounded-md p-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xs">Lorem ipsum dolor sit.</h2>
+            <span className="text-xs text-gray-400 bg-white rounded-md px-1 py-1">
+              2025-10-12
+            </span>
+          </div>
+          <p className="text-xs text-gray-400 mt-1">
+            Lorem ipsum dolor sit amet consecturuer adipisicing elit.
+            Volumptums, epxeditia. Rerum, facilis
+          </p>
+        </div>
       </div>
     </div>
   );
