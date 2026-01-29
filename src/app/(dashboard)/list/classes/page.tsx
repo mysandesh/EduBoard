@@ -2,7 +2,6 @@ import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 import { role, classesData } from "@/lib/data";
-import { COOKIE_NAME_PRERENDER_BYPASS } from "next/dist/server/api-utils";
 import Image from "next/image";
 import Link from "next/link";
 
