@@ -3,7 +3,6 @@ import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 import { role, subjectsData } from "@/lib/data";
 import Image from "next/image";
-import Link from "next/link";
 
 type Subject = {
   id: number;
@@ -38,11 +37,6 @@ const SubjectListPage = () => {
 
       <td>
         <div className="flex items-center gap-2 ">
-          <Link href={`/list/teachers/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-customSky">
-              <Image src="/view.png" alt="" width={16} height={16} />
-            </button>
-          </Link>
           {role === "admin" && (
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-customPurple">
               <Image src="/delete.png" alt="" width={16} height={16} />
