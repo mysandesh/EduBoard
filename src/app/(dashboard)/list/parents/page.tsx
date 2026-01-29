@@ -57,6 +57,9 @@ const ParentListPage = () => {
       <td className="hidden md:table-cell">{item.address}</td>
       <td>
         <div className="flex items-center gap-2 ">
+          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-customPurple">
+            <Image src="/edit.png" alt="" width={16} height={16} />
+          </button>
           {role === "admin" && (
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-customPurple">
               <Image src="/delete.png" alt="" width={16} height={16} />
