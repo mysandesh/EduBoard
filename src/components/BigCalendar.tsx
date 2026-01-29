@@ -1,5 +1,6 @@
 "use client";
-import { Calendar, momentLocalizer, Views, View } from "react-big-calendar";
+
+import { Calendar, momentLocalizer, View, Views } from "react-big-calendar";
 import moment from "moment";
 import { calendarEvents } from "@/lib/data";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -15,20 +16,18 @@ const BigCalendar = () => {
   };
 
   return (
-    <div>
-      <Calendar
-        localizer={localizer}
-        events={calendarEvents}
-        startAccessor="start"
-        endAccessor="end"
-        views={["work_week", "day"]}
-        view={view}
-        style={{ height: "98%" }}
-        onView={handleOnChangeView}
-        min={new Date(2025, 8, 1, 8, 0, 0)}
-        max={new Date(2025, 8, 1, 17, 0, 0)}
-      />
-    </div>
+    <Calendar
+      localizer={localizer}
+      events={calendarEvents}
+      startAccessor="start"
+      endAccessor="end"
+      views={["work_week", "day"]}
+      view={view}
+      style={{ height: "98%" }}
+      onView={handleOnChangeView}
+      min={new Date(2026, 0, 0, 8, 0, 0)}
+      max={new Date(2026, 0, 0, 17, 0, 0)}
+    />
   );
 };
 
