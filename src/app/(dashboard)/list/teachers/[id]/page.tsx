@@ -4,7 +4,7 @@ const SingleTeacherPage = () => {
       {/* LEFT */}
       <div className="w-full xl:w-2/3">
         {/* TOP */}
-        <div className="">
+        <div className="flex flex-col lg:flex-row gap-4">
           {/* USER INFO CARD */}
           <div></div>
           {/* SMALL CARDS */}
