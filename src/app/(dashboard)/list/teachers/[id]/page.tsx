@@ -6,9 +6,9 @@ const SingleTeacherPage = () => {
         {/* TOP */}
         <div className="flex flex-col lg:flex-row gap-4">
           {/* USER INFO CARD */}
-          <div></div>
+          <div className="bg-customSky py-6 px-4 rounded-md flex-1"></div>
           {/* SMALL CARDS */}
-          <div></div>
+          <div className="flex-1"></div>
         </div>
         {/* BOTTOM */}
         <div className="">Schedule</div>
